@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "draggesturekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Harry-KNIGHT/DragGestureKit",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "809cfbe2f2c1b93119e61a940ef0b81835fa7e5d"
+      }
+    }
+  ],
+  "version" : 2
+}
