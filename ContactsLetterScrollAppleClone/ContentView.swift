@@ -41,10 +41,17 @@ struct ContentView: View {
                     VStack(spacing: 5) {
                         ForEach(alphabet, id: \.self) { letter in
                             Text(letter)
-                                .font(.caption)
                                 .id(letter)
+                                .font(.caption)
+                                .foregroundStyle(letter == letterToScroll ? Color.red : Color.primary)
+                                .onTapGesture {
+                                    letterToScroll = letter
+                                }
                         }
+
                     }
+                    .padding(10)
+
                 } onDragChanged: { value in
                     letterToScroll = value
                 }
